@@ -10,19 +10,25 @@ module.exports = {
     },
   },
   rules: {
-    'strict': 'off',
+    strict: 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
-    'semi': ['error', 'never'],
+    semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
     'comma-dangle': ['error', {
-      'arrays': 'always-multiline',
-      'objects': 'always-multiline',
-      'imports': 'always-multiline',
-      'functions': 'never',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      functions: 'never',
     }],
     'operator-linebreak': ['error', 'after', {
-      'overrides': { '?': 'before', ':': 'before' },
-    }],
+      overrides: {
+        '?': 'before',
+        ':': 'before',
+        '&&': 'before',
+        '+': 'before',
+        '||': 'before',
+      } },
+    ],
     'brace-style': ['error', 'stroustrup'],
     'quote-props': ['error', 'as-needed'],
 
@@ -33,7 +39,7 @@ module.exports = {
         'json', 'json5',
         'styl', 'css', 'scss', 'sass', 'styl',
         'jpeg', 'jpg', 'png', 'svg', 'bmp', 'gif',
-      ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {})
+      ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {}),
     ],
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',
