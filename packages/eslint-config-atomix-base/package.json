@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-atomix-base",
+  "version": "1.0.0",
+  "description": "Config for ESLint based on airbnb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixinteractions/eslint-config-base.git"
+  },
+  "keywords": [
+    "style",
+    "guide",
+    "lint",
+    "rules",
+    "config",
+    "es6",
+    "es2015",
+    "javascript"
+  ],
+  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomixinteractions/eslint-config-base/issues"
+  },
+  "homepage": "https://github.com/atomixinteractions/eslint-config-base",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
