@@ -33,6 +33,7 @@ module.exports = {
     ],
     'brace-style': ['error', 'stroustrup'],
     'quote-props': ['error', 'as-needed'],
+    "no-plusplus": "off",
 
     // 'import/no-extraneous-dependencies': 'off'
     'import/no-unresolved': 'off',

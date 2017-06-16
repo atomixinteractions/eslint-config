@@ -28,6 +28,9 @@ else {
   global.meet = false
 }
 
+example.first++
+example.second = --example.first
+
 let target = global.meet
   ? 'overrided'
   : 'misleaded'
