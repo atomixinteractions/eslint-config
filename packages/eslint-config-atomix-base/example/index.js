@@ -2,6 +2,7 @@ import { resolve } from 'fs'
 import four from './four'
 import five from './five.json'
 
+
 const example = {
   first: 1,
   second: 2,

@@ -1,7 +1,6 @@
 module.exports = {
-  extends: [
-    'airbnb-base',
-  ],
+  name: 'eslint-config-atomix-base',
+  extends: 'airbnb-base',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
@@ -9,10 +8,13 @@ module.exports = {
       experimentalObjectRestSpread: true,
     },
   },
+  plugins: [
+    'import',
+  ],
   rules: {
-    strict: 'off',
+    'strict': 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
-    semi: ['error', 'never'],
+    'semi': ['error', 'never'],
     'no-confusing-arrow': 'off',
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
