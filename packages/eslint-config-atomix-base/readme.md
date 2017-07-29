@@ -11,7 +11,7 @@ Our config bases on [Airbnb's eslint config](https://github.com/airbnb/javascrip
 Installation:
 
 ```bash
-npm install --save-dev eslint@3 babel-eslint eslint-config-atomix-base
+npm install --save-dev eslint babel-eslint eslint-config-atomix-base
 ```
 
 Create `.eslintrc`:
@@ -31,7 +31,7 @@ Add `test` script to your package.json `"test": "eslint src lib bin"`
 If you don't want es2017 features:
 
 ```bash
-npm install --save-dev eslint@3 eslint-config-atomix-base
+npm install --save-dev eslint eslint-config-atomix-base
 ```
 
 ```json
