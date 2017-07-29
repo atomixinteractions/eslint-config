@@ -1,5 +1,4 @@
 module.exports = {
-  name: 'eslint-config-atomix-base',
   extends: 'airbnb-base',
   parserOptions: {
     ecmaVersion: 2017,
