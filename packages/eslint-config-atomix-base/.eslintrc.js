@@ -1,5 +1,4 @@
 module.exports = {
-  extends: 'airbnb-base',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
@@ -9,7 +8,9 @@ module.exports = {
   },
   plugins: [
     'import',
+    'unicorn',
   ],
+  extends: ['airbnb-base', 'plugin:unicorn/recommended'],
   rules: {
     'strict': 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
@@ -19,7 +20,7 @@ module.exports = {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'always-multiline',
-      functions: 'never',
+      functions: 'ignore',
     }],
     'operator-linebreak': ['error', 'after', {
       overrides: {
@@ -53,5 +54,8 @@ module.exports = {
     'import/newline-after-import': ['warn', { count: 2 }],
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',
+
+    'unicorn/catch-error-name': ['error', { name: 'error' }],
+    'no-fn-reference-in-iterator': 'off',
   },
 }

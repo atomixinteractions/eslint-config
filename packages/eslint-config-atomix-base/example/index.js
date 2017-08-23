@@ -1,5 +1,7 @@
 import { resolve } from 'fs'
 
+import reinstall from '../index'
+
 import four from './four'
 import five from './five.json'
 
@@ -19,18 +21,34 @@ const example = {
 
 const inside = resolve(
   example,
-  `report${example['third-e'].join(',')}`
+  `report${example['third-e'].join(',')}`,
+  reinstall.path
 )
 
-if (inside === 'demo') {
-  global.meet = true
+try {
+  if (inside === 'demo') {
+    global.meet = true
+  }
+  else {
+    global.meet = false
+  }
 }
-else {
-  global.meet = false
+catch (foo) {
+  try {
+    inside()
+  }
+  catch (bar) {
+    global.miss(bar)
+  }
 }
 
-example.first++
-example.second = --example.first
+try {
+  example.first++
+  example.second = --example.first
+}
+catch (error) {
+  example.second = 0
+}
 
 let target = global.meet
   ? 'overrided'
