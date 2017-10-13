@@ -51,7 +51,7 @@ https://eslint.org/docs/rules/strict
 Disable strict mode. You can manually enable it if required.
 
 
-## no-unused-vars: warn
+## no-unused-vars: `warn`
 
 ```js
 { ignoreRestSiblings: false }
@@ -62,14 +62,14 @@ https://eslint.org/docs/rules/no-unused-vars
 Unused variables/functions/classes should be removed or commented.
 
 
-## semi: error, never
+## semi: `error, never`
 
 https://eslint.org/docs/rules/semi
 
 We don't write semicolons at each line. Only when needed.
 
 
-## no-confusing-arrow: off
+## no-confusing-arrow: `off`
 
 https://eslint.org/docs/rules/no-confusing-arrow
 
@@ -80,7 +80,7 @@ const x = a => 1 ? 2 : 3
 ```
 
 
-## no-magic-numbers: warn
+## no-magic-numbers: `warn`
 
 ```js
 {
@@ -113,7 +113,7 @@ const prev = myList[val.next - 1]
 ```
 
 
-## comma-dangle: error
+## comma-dangle: `error`
 
 ```js
 {
@@ -129,7 +129,7 @@ https://eslint.org/docs/rules/comma-dangle
 Not all environments supports comma dangle in function call/definition.
 
 
-## operator-linebreak: error, after
+## operator-linebreak: `error, after`
 
 ```js
 {
@@ -168,7 +168,7 @@ const demo = Foo.first ||
 ```
 
 
-## brace-style: error, stroustrup
+## brace-style: `error, stroustrup`
 
 https://eslint.org/docs/rules/brace-style
 
@@ -255,7 +255,7 @@ function Demo(argument) {
 ```
 
 
-## quote-props: error, as-needed
+## quote-props: `error, as-needed`
 
 https://eslint.org/docs/rules/quote-props
 
@@ -284,14 +284,14 @@ const baz = {
 ```
 
 
-## no-plusplus: off
+## no-plusplus: `off`
 
 https://eslint.org/docs/rules/no-plusplus
 
 We use it, because it good shorthand for some cases.
 
 
-## import/no-unresolved: off
+## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
 
@@ -300,7 +300,7 @@ Because some projects use aliases or module resolvers.
 But you can [configure module resolver](https://github.com/benmosher/eslint-plugin-import#resolvers) for eslint and enable it rule in your config.
 
 
-## import/extensions: error, never
+## import/extensions: `error, never`
 
 ```
 always for: json, json5, styl, css, scss, sass, styl, jpeg, jpg, png, svg, bmp, gif
@@ -311,7 +311,7 @@ https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensi
 Node, webpack, rollup not require `.js` in file path by default.
 
 
-## import/order: warn
+## import/order: `warn`
 
 ```js
 {
@@ -329,7 +329,7 @@ https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.m
 Prefer order of your imports. To correct resolving `internal` and `external` modules [configure module resolver](https://github.com/benmosher/eslint-plugin-import#resolvers).
 
 
-## import/newline-after-import: warn
+## import/newline-after-import: `warn`
 
 ```js
 { count: 2 }
@@ -340,7 +340,7 @@ https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline
 We separate our imports with main code with 2 empty lines.
 
 
-## import/prefer-default-export: off
+## import/prefer-default-export: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
 
@@ -367,7 +367,7 @@ import { Foo as SomeAnyName } from './foo'
 ```
 
 
-## import/no-named-as-default: off
+## import/no-named-as-default: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
 
@@ -378,7 +378,7 @@ import FooBar from './foo-bar' // Correct import. But not solved by rule
 ```
 
 
-## unicorn/catch-error-name: error
+## unicorn/catch-error-name: `error`
 
 ```js
 { name: 'error' }
@@ -389,7 +389,7 @@ https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/cat
 Variable names like `e`, `err`, `er` is so short. Name should be comprehensive like `error`.
 
 
-## unicorn/no-fn-reference-in-iterator: off
+## unicorn/no-fn-reference-in-iterator: `off`
 
 https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
 
