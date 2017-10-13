@@ -17,6 +17,13 @@ module.exports = {
     'semi': ['error', 'never'],
     'no-confusing-arrow': 'off',
 
+    'no-magic-numbers': ['warn', {
+      ignore: [1],
+      ignoreArrayIndexes: true,
+      enforceConst: true,
+      detectObjects: false,
+    }],
+
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',

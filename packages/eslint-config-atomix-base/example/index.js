@@ -9,18 +9,21 @@ const example = {
   first: 1,
   second: 2,
   'third-e': [
-    1,
-    2,
-    3,
+    '1',
+    '2',
+    '3',
     '4',
   ],
   five,
   four,
 }
 
+const PART_NUM = 12
+
 const inside = resolve(
   example,
   `report${example['third-e'].join(',')}`,
+  `foo${PART_NUM}`,
   reinstall.path
 )
 
@@ -49,11 +52,14 @@ catch (error) {
   example.second = 0
 }
 
+const OFFSET = 12
+const INCR = 0.3
+
 let target = global.meet
   ? 'overrided'
   : 'misleaded'
 
-target = example.first + 12
+target = example.first + OFFSET
 
-export const demo = target * 0.3
+export const demo = target * INCR
 export default example

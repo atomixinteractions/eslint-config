@@ -80,6 +80,39 @@ const x = a => 1 ? 2 : 3
 ```
 
 
+## no-magic-numbers: warn
+
+```js
+{
+  ignore: [1],
+  ignoreArrayIndexes: true,
+  enforceConst: true,
+  detectObjects: false,
+}
+```
+
+https://eslint.org/docs/rules/no-magic-numbers
+
+Magic numbers is not descriptive. Please name it.
+
+Exclude: 1, array indexes, object of numbers.
+
+```js
+// Good
+
+const TAX = 1.28
+const Coeff = {
+  A: 0.924,
+  B: 0.759,
+  C: 0.552,
+  V: 0.308,
+  Z: 0.116,
+}
+const val = myList[5]
+const prev = myList[val.next - 1]
+```
+
+
 ## comma-dangle: error
 
 ```js
@@ -348,7 +381,7 @@ import FooBar from './foo-bar' // Correct import. But not solved by rule
 ## unicorn/catch-error-name: error
 
 ```js
-{ name: 'error }
+{ name: 'error' }
 ```
 
 https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/catch-error-name.md
