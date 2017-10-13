@@ -16,12 +16,14 @@ module.exports = {
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
     'semi': ['error', 'never'],
     'no-confusing-arrow': 'off',
+
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'always-multiline',
       functions: 'ignore',
     }],
+
     'operator-linebreak': ['error', 'after', {
       overrides: {
         '?': 'before',
@@ -43,14 +45,16 @@ module.exports = {
         'jpeg', 'jpg', 'png', 'svg', 'bmp', 'gif',
       ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {}),
     ],
+
     'import/order': ['warn', {
       groups: [
         ['builtin', 'external'],
         ['internal', 'parent'],
         ['sibling', 'index']
       ],
-      'newlines-between': 'always',
+      'newlines-between': 'ignore',
     }],
+
     'import/newline-after-import': ['warn', { count: 2 }],
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',

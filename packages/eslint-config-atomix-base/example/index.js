@@ -1,7 +1,6 @@
 import { resolve } from 'fs'
 
 import reinstall from '../index'
-
 import four from './four'
 import five from './five.json'
 
