@@ -84,7 +84,7 @@ const x = a => 1 ? 2 : 3
 
 ```js
 {
-  ignore: [1],
+  ignore: [1, 0],
   ignoreArrayIndexes: true,
   enforceConst: true,
   detectObjects: false,
@@ -95,7 +95,7 @@ https://eslint.org/docs/rules/no-magic-numbers
 
 Magic numbers is not descriptive. Please name it.
 
-Exclude: 1, array indexes, object of numbers.
+Exclude: 1, 0, array indexes, object of numbers.
 
 ```js
 // Good

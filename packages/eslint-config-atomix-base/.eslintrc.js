@@ -18,7 +18,7 @@ module.exports = {
     'no-confusing-arrow': 'off',
 
     'no-magic-numbers': ['warn', {
-      ignore: [1],
+      ignore: [1, 0],
       ignoreArrayIndexes: true,
       enforceConst: true,
       detectObjects: false,
