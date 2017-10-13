@@ -60,6 +60,6 @@ module.exports = {
     'import/no-named-as-default': 'off',
 
     'unicorn/catch-error-name': ['error', { name: 'error' }],
-    'no-fn-reference-in-iterator': 'off',
+    'unicorn/no-fn-reference-in-iterator': 'off',
   },
 }
