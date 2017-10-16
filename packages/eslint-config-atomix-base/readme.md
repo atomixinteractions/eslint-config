@@ -303,7 +303,7 @@ But you can [configure module resolver](https://github.com/benmosher/eslint-plug
 ## import/extensions: `error, never`
 
 ```
-always for: json, json5, styl, css, scss, sass, styl, jpeg, jpg, png, svg, bmp, gif
+always for: json, json5, less, css, scss, sass, styl, jpeg, jpg, png, svg, bmp, gif
 ```
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
@@ -318,7 +318,7 @@ Node, webpack, rollup not require `.js` in file path by default.
   groups: [
     ['builtin', 'external'],
     ['internal', 'parent'],
-    ['sibling', 'index']
+    ['sibling', 'index'],
   ],
   'newlines-between': 'ignore',
 }

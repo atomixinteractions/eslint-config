@@ -12,9 +12,9 @@ module.exports = {
   ],
   extends: ['airbnb-base', 'plugin:unicorn/recommended'],
   rules: {
-    'strict': 'off',
+    strict: 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
-    'semi': ['error', 'never'],
+    semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
 
     'no-magic-numbers': ['warn', {
@@ -42,13 +42,13 @@ module.exports = {
     ],
     'brace-style': ['error', 'stroustrup'],
     'quote-props': ['error', 'as-needed'],
-    "no-plusplus": "off",
+    'no-plusplus': 'off',
 
     'import/no-unresolved': 'off',
     'import/extensions': ['error', 'never',
       [
         'json', 'json5',
-        'styl', 'css', 'scss', 'sass', 'styl',
+        'less', 'css', 'scss', 'sass', 'styl',
         'jpeg', 'jpg', 'png', 'svg', 'bmp', 'gif',
       ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {}),
     ],
@@ -57,7 +57,7 @@ module.exports = {
       groups: [
         ['builtin', 'external'],
         ['internal', 'parent'],
-        ['sibling', 'index']
+        ['sibling', 'index'],
       ],
       'newlines-between': 'ignore',
     }],
