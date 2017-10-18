@@ -16,6 +16,17 @@ module.exports = {
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
     semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
+    'object-property-newline': ['error'],
+
+    'object-curly-newline': ['warn', {
+      ObjectExpression: {
+        minProperties: 5,
+      },
+      ObjectPattern: {
+        minProperties: 6,
+        multiline: true,
+      },
+    }],
 
     'no-magic-numbers': ['warn', {
       ignore: [1, 0, -1],
