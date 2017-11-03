@@ -18,28 +18,13 @@ const example = {
   four,
 }
 
-const format = ({
-  name, surname, age, demo, foo, bar,
-}) =>
-  `> ${name} ${surname}, ${age} (${[demo, foo, bar].join('::')})`
-
-const maps = { foo: 1, bar: 2, baz: 3, baf: 4 }
-const dats = {
-  foo: 1, bar: 2, baz: 3, baf: 4, maps,
-}
-
-const {
-  foo, bar, baz, baf, maps: boe, ...other
-} = dats
-
 const PART_NUM = 12
 
 const inside = resolve(
   example,
   `report${example['third-e'].join(',')}`,
   `foo${PART_NUM}`,
-  reinstall.path,
-  format(dats),
+  reinstall.path
 )
 
 try {
