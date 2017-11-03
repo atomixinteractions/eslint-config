@@ -43,6 +43,7 @@ module.exports = {
     'brace-style': ['error', 'stroustrup'],
     'quote-props': ['error', 'as-needed'],
     'no-plusplus': 'off',
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     'import/no-unresolved': 'off',
     'import/extensions': ['error', 'never',

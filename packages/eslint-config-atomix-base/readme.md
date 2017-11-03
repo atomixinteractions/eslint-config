@@ -291,6 +291,36 @@ https://eslint.org/docs/rules/no-plusplus
 We use it, because it good shorthand for some cases.
 
 
+## lines-between-class-members: `[error, always]`
+
+```js
+{ exceptAfterSingleLine: true }
+```
+
+https://eslint.org/docs/rules/lines-between-class-members
+
+Add lines between class methods/properties.
+
+Example:
+```js
+class Foo {
+  id = 1
+  name = 'Foo'
+
+  constructor() {
+    // code
+  }
+
+  toString() { /* single line */ }
+
+  member() {
+    // code
+  }
+
+}
+```
+
+
 ## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
