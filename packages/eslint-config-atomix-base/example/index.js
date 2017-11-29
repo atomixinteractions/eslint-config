@@ -19,7 +19,6 @@ const example = {
 }
 
 const PART_NUM = 12
-
 const inside = resolve(
   example,
   `report${example['third-e'].join(',')}`,
@@ -45,7 +44,9 @@ catch (foo) {
 }
 
 try {
-  example.first++
+  const demo = 1
+
+  example.first += demo
   example.second = --example.first
 }
 catch (error) {
