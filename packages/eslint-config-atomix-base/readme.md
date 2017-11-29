@@ -321,6 +321,69 @@ class Foo {
 ```
 
 
+## implicit-arrow-linebreak: `[error, beside]`
+
+https://eslint.org/docs/rules/implicit-arrow-linebreak
+
+Implicit return in arrow function should be on same line.
+
+Correct:
+
+```js
+const foo = () => 1
+const bar = () => (
+  2
+)
+const baz = () => {
+  const val = 3
+  return 3
+}
+```
+
+Incorrect:
+
+```js
+const foo = () =>
+  1
+const bar = () =>
+  (
+    2
+  )
+const baz = () =>
+  () =>
+    3
+```
+
+
+## padding-line-between-statements: `error`
+
+```js
+{ blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+{ blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+```
+
+https://eslint.org/docs/rules/padding-line-between-statements
+
+Add padding line after `let`, `const` definitions.
+
+Correct:
+
+```js
+const foo = 1
+const bar = 2
+
+runFunc(foo, bar)
+```
+
+Incorrect:
+
+```js
+const foo = 1
+const bar = 2
+runFunc(foo, bar)
+```
+
+
 ## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
@@ -424,3 +487,10 @@ Variable names like `e`, `err`, `er` is so short. Name should be comprehensive l
 https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
 
 Disabled, because we like functional programming and we check all changelogs before update dependencies.
+
+
+## unicorn/import-index: `off`
+
+https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/import-index.md
+
+Disabled, because we like more descriptive paths.
