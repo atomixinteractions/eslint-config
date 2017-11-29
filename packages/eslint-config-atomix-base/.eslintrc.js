@@ -76,5 +76,6 @@ module.exports = {
 
     'unicorn/catch-error-name': ['error', { name: 'error' }],
     'unicorn/no-fn-reference-in-iterator': 'off',
+    'unicorn/import-index': 'off',
   },
 }
