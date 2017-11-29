@@ -44,6 +44,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed'],
     'no-plusplus': 'off',
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    'implicit-arrow-linebreak': ['error', 'beside'],
 
     'padding-line-between-statements': [
       'error',
