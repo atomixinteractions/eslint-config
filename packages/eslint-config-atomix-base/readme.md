@@ -393,6 +393,17 @@ In Node.js LTS await in loop is native and optimized.
 > Enabled in react
 
 
+## no-restricted-syntax: `off`
+
+https://eslint.org/docs/rules/no-restricted-syntax
+
+In node.js we want to use "await in for" without Futures.
+
+https://github.com/airbnb/javascript#iterators--nope
+
+> Enabled in react
+
+
 ## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md

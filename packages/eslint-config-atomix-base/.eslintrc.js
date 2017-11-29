@@ -53,6 +53,8 @@ module.exports = {
     ],
 
     'no-await-in-loop': 'off',
+    'no-restricted-syntax': 'off',
+
     'import/no-unresolved': 'off',
     'import/extensions': ['error', 'never',
       [

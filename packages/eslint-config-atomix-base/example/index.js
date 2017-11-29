@@ -18,6 +18,14 @@ const example = {
   four,
 }
 
+const getAsync = data => new Promise(res => setTimeout(res, 1, data))
+
+async function testAsync(list) {
+  for (const item of list) {
+    await getAsync(item)
+  }
+}
+
 const PART_NUM = 12
 const inside = resolve(
   example,
@@ -61,6 +69,10 @@ let target = global.meet
   : 'misleaded'
 
 target = example.first + OFFSET
+
+export function fill() {
+  return testAsync()
+}
 
 export const demo = target * INCR
 export default example
