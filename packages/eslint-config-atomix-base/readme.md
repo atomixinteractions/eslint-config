@@ -384,6 +384,15 @@ runFunc(foo, bar)
 ```
 
 
+## no-await-in-loop: `off`
+
+https://eslint.org/docs/rules/no-await-in-loop
+
+In Node.js LTS await in loop is native and optimized.
+
+> Enabled in react
+
+
 ## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md

@@ -52,6 +52,7 @@ module.exports = {
       { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
     ],
 
+    'no-await-in-loop': 'off',
     'import/no-unresolved': 'off',
     'import/extensions': ['error', 'never',
       [
