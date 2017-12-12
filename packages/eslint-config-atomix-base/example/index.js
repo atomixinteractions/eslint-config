@@ -18,6 +18,7 @@ const example = {
   four,
 }
 
+
 const getAsync = data => new Promise(res => setTimeout(res, 1, data))
 
 async function testAsync(list) {
@@ -25,13 +26,27 @@ async function testAsync(list) {
     await getAsync(item)
   }
 }
+const format = ({ name, surname, age, demo, foo, bar }) => (
+  `> ${name} ${surname}, ${age} (${[demo, foo, bar].join('::')})`
+)
+
+const maps = { foo: 1, bar: 2, baz: 3, baf: 4 }
+const dats = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+  baf: 4,
+  maps,
+}
+
 
 const PART_NUM = 12
 const inside = resolve(
   example,
   `report${example['third-e'].join(',')}`,
   `foo${PART_NUM}`,
-  reinstall.path
+  reinstall.path,
+  format(dats),
 )
 
 try {

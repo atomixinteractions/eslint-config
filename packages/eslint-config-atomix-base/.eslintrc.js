@@ -16,6 +16,10 @@ module.exports = {
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
     semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
+    'object-property-newline': 'off',
+
+    'object-curly-newline': 'off',
+    'object-curly-spacing': 'off',
 
     'no-magic-numbers': ['warn', {
       ignore: [1, 0, -1],
