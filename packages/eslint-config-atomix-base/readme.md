@@ -79,47 +79,15 @@ Really? You can be confused with?
 const x = a => 1 ? 2 : 3
 ```
 
-## object-property-newline: `error`
+## object-property-newline: `off`
+## object-curly-newline: `off`
+## object-curly-spacing: `off`
 
 https://eslint.org/docs/rules/object-property-newline
-
-Just write multiline object definition with new line for each property.
-
-## object-curly-newline: `warn`
-
-```js
-{
-  ObjectExpression: { minProperties: 5 },
-  ObjectPattern: { minProperties: 6, multiline: true },
-}
-```
-
 https://eslint.org/docs/rules/object-curly-newline
+https://eslint.org/docs/rules/object-curly-spacing
 
-Object definition with more than 4 properties should be multiline.
-
-```js
-const expression = {
-  foo: 1,
-  bar: 2,
-  baz: 3,
-  taf: 4,
-  kas: 5.
-}
-```
-
-For object destructuring with more than 5 properties, should be multiline.
-
-```js
-const {
-  foo,
-  bar,
-  baz,
-  baf,
-  maps: boe,
-  ...other
-} = dats
-```
+Disabled because broken
 
 
 ## no-magic-numbers: `warn`
