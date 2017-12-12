@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-atomix-base",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Config for ESLint based on airbnb",
   "main": ".eslintrc",
   "scripts": {
