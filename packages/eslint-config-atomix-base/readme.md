@@ -76,7 +76,7 @@ https://eslint.org/docs/rules/no-confusing-arrow
 Really? You can be confused with?
 
 ```js
-const x = a => 1 ? 2 : 3
+const x = (a) => 1 ? 2 : 3
 ```
 
 ## object-property-newline: `off`
@@ -89,6 +89,51 @@ https://eslint.org/docs/rules/object-curly-spacing
 
 Disabled because broken
 
+## arrow-parens: `warn`, `always`
+
+https://eslint.org/docs/rules/arrow-parens
+
+As defined in [Airbnb JS CodeStyle](https://github.com/airbnb/javascript/tree/f9fcb37af15391f6f75ae3e8d5e09f5f2ae064b8#arrows--implicit-return) arrow parens should only for block body.
+
+But when you add more params for lambda, you should add parens. Example:
+
+```diff
+-.map(value => rotate(value, 1))
++.map((value, index) => rotate(value, 1 - index))
+```
+
+It provides inconsistency.
+
+
+```js
+// Good
+() => {};
+(a) => {};
+(a) => a;
+(a) => {'\n'}
+a.then((foo) => {});
+a.then((foo) => { if (true) {} });
+const foo = (bar, baz) => ({ bar: baz })
+const bar = ({ bar }) => bar.baz
+const baz = (example) => {
+  return 1
+}
+```
+
+```js
+// Bad
+() => {};
+a => {};
+a => a;
+a => {'\n'}
+a.then(foo => {});
+a.then(foo => { if (true) {} });
+const foo = (bar, baz) => ({ bar: baz })
+const bar = ({ bar }) => bar.baz
+const baz = example => {
+  return 1
+}
+```
 
 ## no-magic-numbers: `warn`
 
@@ -192,11 +237,11 @@ function Demo(argument) {
       const result = Target.actionCall(argument, -1)
 
       while (!result.active) {
-        result.status.to(status => status + argument.value)
+        result.status.to((status) => status + argument.value)
       }
 
       return result
-        .map(value => value.resolver(res => res[result.name]))
+        .map((value) => value.resolver((res) => res[result.name]))
     }
     catch (error) {
       return Target.chainCall(() => Target.wrapWith(argument, error))
@@ -207,8 +252,8 @@ function Demo(argument) {
 
     try {
       return value
-        .resolver(res => value.getProp(res))
-        .map(value => value.head())
+        .resolver((res) => value.getProp(res))
+        .map((value) => value.head())
     }
     catch (error) {
       const rawValue = value.chain(Target.useRawSource)
@@ -220,9 +265,9 @@ function Demo(argument) {
     const defaultValue = Target.wrap(Target.null())
 
     return defaultValue
-      .resolver(res => null)
-      .map(value => Target.useRawSource(null).value())
-      .chain(fut => fut.status.to(status => 0))
+      .resolver((res) => null)
+      .map((value) => Target.useRawSource(null).value())
+      .chain((fut) => fut.status.to((status) => 0))
   }
 }
 
@@ -233,11 +278,11 @@ function Demo(argument) {
       const result = Target.actionCall(argument, -1)
 
       while (!result.active) {
-        result.status.to(status => status + argument.value)
+        result.status.to((status) => status + argument.value)
       }
 
       return result
-        .map(value => value.resolver(res => res[result.name]))
+        .map((value) => value.resolver((res) => res[result.name]))
     } catch (error) {
       return Target.chainCall(() => Target.wrapWith(argument, error))
     }
@@ -246,8 +291,8 @@ function Demo(argument) {
 
     try {
       return value
-        .resolver(res => value.getProp(res))
-        .map(value => value.head())
+        .resolver((res) => value.getProp(res))
+        .map((value) => value.head())
     } catch (error) {
       const rawValue = value.chain(Target.useRawSource)
 
@@ -257,9 +302,9 @@ function Demo(argument) {
     const defaultValue = Target.wrap(Target.null())
 
     return defaultValue
-      .resolver(res => null)
-      .map(value => Target.useRawSource(null).value())
-      .chain(fut => fut.status.to(status => 0))
+      .resolver((res) => null)
+      .map((value) => Target.useRawSource(null).value())
+      .chain((fut) => fut.status.to((status) => 0))
   }
 }
 ```

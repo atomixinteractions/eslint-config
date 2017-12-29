@@ -18,8 +18,7 @@ const example = {
   four,
 }
 
-
-const getAsync = data => new Promise(res => setTimeout(res, 1, data))
+const getAsync = (data) => new Promise((res) => setTimeout(res, 1, data))
 
 async function testAsync(list) {
   for (const item of list) {

@@ -21,6 +21,8 @@ module.exports = {
     'object-curly-newline': 'off',
     'object-curly-spacing': 'off',
 
+    'arrow-parens': ['warn', 'always'],
+
     'no-magic-numbers': ['warn', {
       ignore: [1, 0, -1],
       ignoreArrayIndexes: true,
