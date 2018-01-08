@@ -135,6 +135,39 @@ const baz = example => {
 }
 ```
 
+## id-match: `error`, `^([a-z]([A-Za-z0-9]+){2,})|([A-Z][A-Z_0-9]+$`
+
+```js
+{
+  properties: false,
+  onlyDeclarations: true,
+}
+```
+
+https://eslint.org/docs/rules/id-match
+
+All identifiers should be camelCased and more that 2 symbols length.
+Constants can be SCREAMING_UNDERSCORED
+
+```js
+// Good
+
+let value = 1
+const functionDummy = (argument) => {}
+const CONSTANT_NAME = 123
+class ExampleName {}
+```
+
+
+```js
+// Bad
+const Value = 1
+const function_dummy = (MySuper_Argument) => {}
+const constant_NAME = 1
+class example_CLASS_name {}
+```
+
+
 ## no-magic-numbers: `warn`
 
 ```js

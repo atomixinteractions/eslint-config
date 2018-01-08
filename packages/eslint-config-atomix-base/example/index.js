@@ -18,7 +18,10 @@ const example = {
   four,
 }
 
-const getAsync = (data) => new Promise((res) => setTimeout(res, 1, data))
+const CONSTANT_NAME = 123
+const valueName = 1 + CONSTANT_NAME
+
+const getAsync = (data) => new Promise((res) => setTimeout(res, 1 * valueName, data))
 
 async function testAsync(list) {
   for (const item of list) {

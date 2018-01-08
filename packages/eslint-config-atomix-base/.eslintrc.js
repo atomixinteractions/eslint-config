@@ -23,7 +23,7 @@ module.exports = {
 
     'arrow-parens': ['warn', 'always'],
 
-    'id-match': ['error', '^[a-z]([A-Za-z0-9]+){2,}$', {
+    'id-match': ['error', '^([a-z]([A-Za-z0-9]+){2,})|([A-Z][A-Z_0-9]+)$', {
       properties: false,
       onlyDeclarations: true,
     }],
