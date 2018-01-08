@@ -23,6 +23,11 @@ module.exports = {
 
     'arrow-parens': ['warn', 'always'],
 
+    'id-match': ['error', '^[a-z]([A-Za-z0-9]+){2,}$', {
+      properties: false,
+      onlyDeclarations: true,
+    }],
+
     'no-magic-numbers': ['warn', {
       ignore: [1, 0, -1],
       ignoreArrayIndexes: true,
