@@ -1,17 +1,17 @@
 {
-  "name": "eslint-config-atomix-base",
-  "version": "5.3.2",
-  "description": "Config for ESLint based on airbnb",
+  "name": "@atomix/eslint",
+  "version": "6.0.0-import",
+  "description": "Config for ESLint used in Atomix",
   "main": ".eslintrc",
   "scripts": {
     "test": "eslint example"
   },
-  "config": {
+  "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atomixinteractions/eslint-config-base.git"
+    "url": "git+https://github.com/atomixinteractions/eslint-config.git"
   },
   "keywords": [
     "style",
@@ -21,17 +21,18 @@
     "config",
     "es6",
     "es2015",
+    "es2016",
     "javascript"
   ],
   "author": "Atomix Interactions Ltd.",
   "maintainers": [
-    "Sergey Sova <i.am@lestad.net> (https://lestad.top)"
+    "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atomixinteractions/eslint-config-base/issues"
+    "url": "https://github.com/atomixinteractions/eslint-config/issues"
   },
-  "homepage": "https://github.com/atomixinteractions/eslint-config-base",
+  "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
     "eslint": "^4.12.0"
   },

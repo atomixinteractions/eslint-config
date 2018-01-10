@@ -1,24 +1,24 @@
-# eslint-config-atomix-base
+# @atomix/eslint
 
-[![npm](https://img.shields.io/npm/v/eslint-config-atomix-base.svg)](https://npmjs.com/eslint-config-atomix-base)
+[![npm](https://img.shields.io/npm/v/@atomix/eslint.svg)](https://npmjs.com/@atomix/eslint)
 
 This package provides Atomix's base .eslintrc config for ECMAScript 2017.
 
 ## Usage
 
-Our config bases on [Airbnb's eslint config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) and [Unicorn by Sindre Sorhus](https://github.com/sindresorhus/eslint-plugin-unicorn).
+Our config bases on [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) and [Unicorn by Sindre Sorhus](https://github.com/sindresorhus/eslint-plugin-unicorn).
 
 Installation:
 
 ```bash
-npm install --save-dev eslint babel-eslint eslint-config-atomix-base
+npm install --save-dev eslint babel-eslint @atomix/eslint
 ```
 
 Create `.eslintrc`:
 
 ```json
 {
-  "extends": "atomix-base",
+  "extends": "@atomix/eslint",
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017
@@ -31,7 +31,7 @@ Add `test` script to your package.json `"test": "eslint src lib bin"`
 If you don't want es2017 features:
 
 ```bash
-npm install --save-dev eslint eslint-config-atomix-base
+npm install --save-dev eslint @atomix/eslint
 ```
 
 ```json
