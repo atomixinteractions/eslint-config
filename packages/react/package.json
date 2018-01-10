@@ -1,7 +1,7 @@
 {
-  "name": "@atomix/eslint-config",
+  "name": "@atomix/eslint-config-react",
   "version": "6.0.0-import",
-  "description": "Config for ESLint used in Atomix",
+  "description": "ESLint config for React used in Atomix",
   "main": ".eslintrc",
   "scripts": {
     "test": "eslint example"
@@ -22,6 +22,8 @@
     "es6",
     "es2015",
     "es2016",
+    "react",
+    "component",
     "javascript"
   ],
   "author": "Atomix Interactions Ltd.",
@@ -34,12 +36,18 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
-    "eslint": "^4.12.0"
+    "eslint": "^4.15.0",
+    "eslint-plugin-unicorn": "^3.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "4.*.*"
   },
   "dependencies": {
-    "babel-eslint": "^8.0.2",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "@atomix/eslint-config": "^6.0.0-import",
+    "babel-eslint": "^8.2.1",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-unicorn": "^3.0.0"
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
   }
 }

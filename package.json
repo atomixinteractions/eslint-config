@@ -1,10 +1,12 @@
 {
-  "name": "@atomix/eslint",
+  "name": "atomix-eslint-monorepo",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "prepublish": "lerna exec 'eslint .'",
+    "publish": "lerna publish"
   },
   "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
   "license": "MIT",
