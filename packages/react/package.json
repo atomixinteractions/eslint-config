@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@atomix/eslint-config": "^6.1.0",
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^6.1.0 || ^7.2.3",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
