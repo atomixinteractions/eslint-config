@@ -11,6 +11,12 @@
   "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
   "license": "MIT",
   "devDependencies": {
+    "cz-customizable": "^5.2.0",
     "lerna": "^2.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   }
 }
