@@ -6,6 +6,7 @@ module.exports = {
       experimentalObjectRestSpread: true,
     },
   },
+  parser: 'babel-eslint',
   plugins: [
     'import',
     'unicorn',
