@@ -34,12 +34,12 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
-    "eslint": "^4.12.0"
+    "eslint": "^4.18.1"
   },
   "dependencies": {
-    "babel-eslint": "^6.1.0 || ^7.2.3",
+    "babel-eslint": "^8.2.2",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-unicorn": "^3.0.0"
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-unicorn": "^4.0.2"
   }
 }
