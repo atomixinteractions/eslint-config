@@ -1,6 +1,6 @@
 {
   "name": "@atomix/eslint-config-react",
-  "version": "6.1.1",
+  "version": "6.2.0",
   "description": "ESLint config for React used in Atomix",
   "main": ".eslintrc",
   "scripts": {
@@ -36,18 +36,18 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
-    "eslint": "^4.15.0",
-    "eslint-plugin-unicorn": "^3.0.1"
+    "eslint": "^4.18.1",
+    "eslint-plugin-unicorn": "^4.0.2"
   },
   "peerDependencies": {
     "eslint": "4.*.*"
   },
   "dependencies": {
-    "@atomix/eslint-config": "^6.1.1",
-    "babel-eslint": "^6.1.0 || ^7.2.3",
+    "@atomix/eslint-config": "^6.2.0",
+    "babel-eslint": "^8.2.2",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.7.0"
   }
 }
