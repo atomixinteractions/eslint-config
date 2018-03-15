@@ -5,13 +5,16 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "prepublish": "lerna run test",
-    "test": "lerna run test",
+    "test": "lerna exec 'npm test'",
     "publish": "lerna publish"
   },
-  "author": "Sergey Sova <i.am@lestad.net> (https://lestad.top)",
+  "author": "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)",
   "license": "MIT",
   "devDependencies": {
     "cz-customizable": "^5.2.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-unicorn": "^4.0.2",
     "lerna": "^2.9.0"
   },
   "config": {

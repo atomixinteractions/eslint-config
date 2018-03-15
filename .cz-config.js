@@ -14,6 +14,7 @@ module.exports = {
   scopes: [
     { name: 'javascript' },
     { name: 'react' },
+    { name: 'flow' },
   ],
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix', 'revert'],

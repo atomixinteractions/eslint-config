@@ -36,14 +36,14 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
-    "eslint": "^4.15.0"
+    "eslint": "^4.18.2"
   },
   "peerDependencies": {
     "eslint": "4.*.*"
   },
   "dependencies": {
     "@atomix/eslint-config": "^6.1.1",
-    "babel-eslint": "^6.1.0 || ^7.2.3",
-    "eslint-plugin-flowtype": "^2.30.1"
+    "babel-eslint": "^8.2.2",
+    "eslint-plugin-flowtype": "^2.46.1"
   }
 }

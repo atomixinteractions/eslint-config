@@ -36,7 +36,7 @@ npm install --save-dev eslint @atomix/eslint-config
 
 ```json
 {
-  "extends": "atomix-base"
+  "extends": "@atomix/eslint-config"
 }
 ```
 
