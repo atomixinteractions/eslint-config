@@ -44,7 +44,7 @@ npm install --save-dev eslint @atomix/eslint-config
 
 Config extends `airbnb-base` and `plugin:unicorn/recommended`.
 
-## strict: off
+## strict: `off`
 
 https://eslint.org/docs/rules/strict
 

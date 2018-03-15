@@ -1,0 +1,49 @@
+{
+  "name": "@atomix/eslint-config-flow",
+  "version": "6.1.1",
+  "description": "ESLint config for Flow used in Atomix",
+  "main": ".eslintrc",
+  "scripts": {
+    "test": "eslint example"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomixinteractions/eslint-config.git"
+  },
+  "keywords": [
+    "style",
+    "guide",
+    "lint",
+    "rules",
+    "config",
+    "es6",
+    "es2015",
+    "es2016",
+    "flow",
+    "component",
+    "javascript"
+  ],
+  "author": "Atomix Interactions Ltd.",
+  "maintainers": [
+    "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomixinteractions/eslint-config/issues"
+  },
+  "homepage": "https://github.com/atomixinteractions/eslint-config",
+  "devDependencies": {
+    "eslint": "^4.15.0"
+  },
+  "peerDependencies": {
+    "eslint": "4.*.*"
+  },
+  "dependencies": {
+    "@atomix/eslint-config": "^6.1.1",
+    "babel-eslint": "^6.1.0 || ^7.2.3",
+    "eslint-plugin-flowtype": "^2.30.1"
+  }
+}
