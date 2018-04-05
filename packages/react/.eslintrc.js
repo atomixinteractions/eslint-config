@@ -69,6 +69,7 @@ module.exports = {
     }],
     'react/no-access-state-in-setstate': 'warn',
     'react/forbid-foreign-prop-types': 'warn',
+    'react/jsx-max-depth': ['warn', { max: 5 }],
 
     'jsx-a11y/interactive-supports-focus': 'off',
     'jsx-a11y/href-no-hash': 'off',

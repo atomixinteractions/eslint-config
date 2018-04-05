@@ -40,6 +40,13 @@ class Page extends Component {
       <div>
         <Button onClick={this.increment}>
           Increment: {this.state.count}
+          <div>
+            <div>
+              <div>
+                <Button />
+              </div>
+            </div>
+          </div>
         </Button>
       </div>
     )
