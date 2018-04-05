@@ -553,6 +553,16 @@ export { foo as default }
 export Bar from './bar'
 ```
 
+
+## import/no-self-import: `error`
+
+https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md
+
+Why you need import self?
+
+Forbid a module from importing itself. This can sometimes happen during refactoring.
+
+
 ## import/order: `warn`
 
 ```js

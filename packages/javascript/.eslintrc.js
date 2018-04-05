@@ -77,6 +77,7 @@ module.exports = {
     ],
 
     'import/no-default-export': 'error',
+    'import/no-self-import': 'error',
 
     'import/order': ['warn', {
       groups: [
