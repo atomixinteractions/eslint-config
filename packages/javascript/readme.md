@@ -519,6 +519,40 @@ https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensi
 Node, webpack, rollup not require `.js` in file path by default.
 
 
+## import/no-default-export: `error`
+
+https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
+
+Why? [Answer here](https://blog.neufund.org/why-we-have-banned-default-exports-and-you-should-do-the-same-d51fdc2cf2ad)
+
+Correct:
+
+```js
+export class Foo {}
+
+export const value = 1
+
+export function run() {}
+
+export { Bar } from './bar'
+
+export * from './example'
+
+export * as Baz from './baz'
+```
+
+Incorrect:
+
+```js
+export default class {}
+
+const foo = 12
+
+export { foo as default }
+
+export Bar from './bar'
+```
+
 ## import/order: `warn`
 
 ```js

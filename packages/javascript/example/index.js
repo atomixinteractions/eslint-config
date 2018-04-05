@@ -1,8 +1,8 @@
 import { resolve } from 'fs'
 
-import reinstall from '../index'
-import four from './four'
-import five from './five.json'
+import { reinstall } from '../index'
+import { four } from './four'
+import { five } from './five.json'
 
 
 const example = {
@@ -92,4 +92,4 @@ export function fill() {
 }
 
 export const demo = target * INCR
-export default example
+export { example }

@@ -76,6 +76,8 @@ module.exports = {
       ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {}),
     ],
 
+    'import/no-default-export': 'error',
+
     'import/order': ['warn', {
       groups: [
         ['builtin', 'external'],
