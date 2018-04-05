@@ -17,10 +17,17 @@ module.exports = {
     'vars-on-top': 'off',
     semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
-    'object-property-newline': 'off',
+    'object-property-newline': ['error', {
+      allowAllPropertiesOnSameLine: true,
+    }],
 
-    'object-curly-newline': 'off',
-    'object-curly-spacing': 'off',
+    'object-curly-newline': ['warn', {
+      ObjectExpression: { multiline: true, consistent: true },
+      ObjectPattern: { multiline: true, consistent: true },
+      ImportDeclaration: { multiline: true, consistent: true },
+      ExportDeclaration: { multiline: true, consistent: true },
+    }],
+    'object-curly-spacing': ['error', 'always'],
 
     'arrow-parens': ['warn', 'always'],
 

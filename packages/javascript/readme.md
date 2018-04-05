@@ -79,15 +79,136 @@ Really? You can be confused with?
 const x = (a) => 1 ? 2 : 3
 ```
 
-## object-property-newline: `off`
-## object-curly-newline: `off`
-## object-curly-spacing: `off`
+## object-property-newline: `error`
+
+```js
+{
+  allowAllPropertiesOnSameLine: true
+}
+```
 
 https://eslint.org/docs/rules/object-property-newline
+
+Properties should be on each line, or all on same line.
+
+Correct:
+
+```js
+const maps = { foo: 1, bar: 2, baz: 3, baf: 4 }
+const dats = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+  baf: 4,
+  maps,
+}
+const wats = {
+  foo: 1, bar: 2, baz: 3, baf: 4, maps, dats,
+}
+```
+
+Incorrect:
+
+```js
+const maps = { foo: 1, bar: 2,
+  baz: 3, baf: 4 }
+const dats = {
+  foo: 1, bar: 2,
+  baz: 3, baf: 4,
+  maps,
+}
+const wats = { foo: 1, bar: 2,
+  baz: 3,
+  baf: 4,
+  maps, dats,
+}
+```
+
+
+## object-curly-newline: `warn`
+
+```js
+{
+  ObjectExpression: { multiline: true, consistent: true },
+  ObjectPattern: { multiline: true, consistent: true },
+  ImportDeclaration: { multiline: true, consistent: true },
+  ExportDeclaration: { multiline: true, consistent: true },
+}
+```
+
 https://eslint.org/docs/rules/object-curly-newline
+
+Correct:
+
+```js
+const format = ({ name, surname, age, demo, foo, bar }) => (
+  `> ${name} ${surname}, ${age} (${[demo, foo, bar].join('::')})`
+)
+
+const format = ({
+  name, surname, age, demo, foo, bar
+}) => (
+  `> ${name} ${surname}, ${age} (${[demo, foo, bar].join('::')})`
+)
+
+const maps = { foo: 1, bar: 2, baz: 3, baf: 4 }
+const dats = {
+  foo: 1,
+  bar: 2,
+  baz: 3,
+  baf: 4,
+  maps,
+}
+```
+
+Incorrect:
+
+```js
+const format = ({
+  name, surname,
+  age, demo, foo, bar }) => (
+  `> ${name} ${surname}, ${age} (${[demo, foo, bar].join('::')})`
+)
+
+const maps = { foo: 1, bar: 2, baz: 3, baf: 4
+}
+const dats = {
+  foo: 1, bar: 2, baz: 3, baf: 4,
+  maps,
+}
+```
+
+
+## object-curly-spacing: [`error`, `always`]
+
 https://eslint.org/docs/rules/object-curly-spacing
 
-Disabled because broken
+Always add spaces inside `{` `}`
+
+Correct:
+
+```js
+import { foo } from './foo'
+
+export { foo }
+
+const { bar } = foo
+
+const object = { bar, foo }
+```
+
+Incorrect:
+
+```js
+import {foo} from './foo'
+
+export {foo}
+
+const {bar} = foo
+
+const object = {bar, foo}
+```
+
 
 ## arrow-parens: `warn`, `always`
 
