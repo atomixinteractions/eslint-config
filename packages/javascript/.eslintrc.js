@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     strict: 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
+    'vars-on-top': 'off',
     semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
     'object-property-newline': 'off',
