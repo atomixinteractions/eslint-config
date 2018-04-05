@@ -40,7 +40,7 @@
     "eslint-plugin-unicorn": "^4.0.2"
   },
   "peerDependencies": {
-    "eslint": "4.*.*"
+    "eslint": "4.19.*"
   },
   "dependencies": {
     "@atomix/eslint-config": "^6.3.0",

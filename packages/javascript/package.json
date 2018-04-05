@@ -36,6 +36,9 @@
   "devDependencies": {
     "eslint": "^4.19.1"
   },
+  "peerDependencies": {
+    "eslint": "4.19.*"
+  },
   "dependencies": {
     "babel-eslint": "^8.2.2",
     "eslint-config-airbnb-base": "^12.1.0",
