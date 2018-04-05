@@ -492,6 +492,13 @@ https://github.com/airbnb/javascript#iterators--nope
 > Enabled in react
 
 
+## import/no-absolute-path: `error`
+
+https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
+
+That is a bad practice as it ties the code using it to your computer, and therefore makes it unusable in packages distributed on npm for instance
+
+
 ## import/no-unresolved: `off`
 
 https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
