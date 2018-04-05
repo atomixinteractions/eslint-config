@@ -67,6 +67,7 @@ module.exports = {
     'react/prop-types': ['warn', {
       ignore: ['classes', 'theme', 'sheet', 'sheets'],
     }],
+    'react/no-access-state-in-setstate': 'warn',
 
     'jsx-a11y/interactive-supports-focus': 'off',
     'jsx-a11y/href-no-hash': 'off',
