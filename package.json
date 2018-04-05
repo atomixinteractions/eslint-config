@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna exec 'npm test'",
     "postinstall": "lerna bootstrap",
     "prepublish": "lerna exec 'eslint .'",
     "publish": "lerna publish"
