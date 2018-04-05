@@ -563,6 +563,23 @@ Why you need import self?
 Forbid a module from importing itself. This can sometimes happen during refactoring.
 
 
+## import/no-cycle: `error`
+
+https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
+
+Prevent cycle imports.
+
+```js
+// dep-b.js
+import './dep-a.js'
+
+export function b() { /* ... */ }
+
+// dep-a.js
+import { b } from './dep-b.js' // reported: Dependency cycle detected.
+```
+
+
 ## import/order: `warn`
 
 ```js
