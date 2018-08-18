@@ -32,7 +32,7 @@ class Page extends Component {
   state = { count: 0 }
 
   increment = () => {
-    this.setState({ count: this.state.count + 1 })
+    this.setState((prevState) => prevState.count + 1)
   }
 
   render() {
@@ -40,6 +40,13 @@ class Page extends Component {
       <div>
         <Button onClick={this.increment}>
           Increment: {this.state.count}
+          <div>
+            <div>
+              <div>
+                <Button />
+              </div>
+            </div>
+          </div>
         </Button>
       </div>
     )

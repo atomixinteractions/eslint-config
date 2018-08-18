@@ -1,6 +1,6 @@
 {
   "name": "@atomix/eslint-config-react",
-  "version": "6.1.1",
+  "version": "6.4.0",
   "description": "ESLint config for React used in Atomix",
   "main": ".eslintrc",
   "scripts": {
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^4.19.1 || ^5.4.0",
     "eslint-plugin-unicorn": "^3.0.1"
   },
   "peerDependencies": {

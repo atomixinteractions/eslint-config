@@ -14,12 +14,20 @@ module.exports = {
   rules: {
     strict: 'off',
     'no-unused-vars': ['warn', { ignoreRestSiblings: false }],
+    'vars-on-top': 'off',
     semi: ['error', 'never'],
     'no-confusing-arrow': 'off',
-    'object-property-newline': 'off',
+    'object-property-newline': ['error', {
+      allowAllPropertiesOnSameLine: true,
+    }],
 
-    'object-curly-newline': 'off',
-    'object-curly-spacing': 'off',
+    'object-curly-newline': ['warn', {
+      ObjectExpression: { multiline: true, consistent: true },
+      ObjectPattern: { multiline: true, consistent: true },
+      ImportDeclaration: { multiline: true, consistent: true },
+      ExportDeclaration: { multiline: true, consistent: true },
+    }],
+    'object-curly-spacing': ['error', 'always'],
 
     'arrow-parens': ['warn', 'always'],
 
@@ -66,6 +74,7 @@ module.exports = {
     'no-await-in-loop': 'off',
     'no-restricted-syntax': 'off',
 
+    'import/no-absolute-path': 'error',
     'import/no-unresolved': 'off',
     'import/extensions': ['error', 'never',
       [
@@ -74,6 +83,10 @@ module.exports = {
         'jpeg', 'jpg', 'png', 'svg', 'bmp', 'gif',
       ].reduce((obj, ext) => Object.assign(obj, { [ext]: 'always' }), {}),
     ],
+
+    'import/no-default-export': 'error',
+    'import/no-self-import': 'error',
+    'import/no-cycle': 'error',
 
     'import/order': ['warn', {
       groups: [
