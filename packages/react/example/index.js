@@ -12,7 +12,9 @@ function testFunction(
 
 const Button = ({ children, onClick, demo }) => (
   <div role="button" onClick={onClick} focusable>
-    {children} x {demo}
+    {children}
+    x
+    {demo}
   </div>
 )
 
