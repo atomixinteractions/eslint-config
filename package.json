@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna exec 'npm test'",
     "postinstall": "lerna bootstrap",
     "prepublish": "lerna exec 'eslint .'",
     "publish": "lerna publish"
@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "cz-customizable": "^5.2.0",
-    "lerna": "^2.6.0"
+    "lerna": "^2.9.0"
   },
   "config": {
     "commitizen": {
