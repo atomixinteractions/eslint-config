@@ -12,7 +12,9 @@ function testFunction(
 
 const Button = ({ children, onClick, demo }) => (
   <div role="button" onClick={onClick} focusable>
-    {children} x {demo}
+    {children}
+    x
+    {demo}
   </div>
 )
 
@@ -36,10 +38,13 @@ class Page extends Component {
   }
 
   render() {
+    const { count } = this.state
+
     return (
       <div>
         <Button onClick={this.increment}>
-          Increment: {this.state.count}
+          Increment:
+          {count}
           <div>
             <div>
               <div>
@@ -64,8 +69,10 @@ class Example extends PureComponent {
   }
 
   resolveUpdate = (event) => {
-    if (this.props.onUpdate) {
-      this.props.onUpdate(event.target)
+    const { onUpdate } = this.props
+
+    if (onUpdate) {
+      onUpdate(event.target)
     }
   }
 
