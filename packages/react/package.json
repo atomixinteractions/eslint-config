@@ -1,6 +1,6 @@
 {
   "name": "@atomix/eslint-config-react",
-  "version": "7.0.0-alpha.2",
+  "version": "7.0.0-alpha.3",
   "description": "ESLint config for React used in Atomix",
   "main": ".eslintrc",
   "scripts": {
@@ -43,7 +43,7 @@
     "eslint": "5.5.*"
   },
   "dependencies": {
-    "@atomix/eslint-config": "^7.0.0-alpha.2",
+    "@atomix/eslint-config": "^7.0.0-alpha.3",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.10.0",
