@@ -1,6 +1,6 @@
-import React, { Component, PureComponent } from 'react'
-import PropTypes from 'prop-types'
-
+/* eslint-disable import/no-extraneous-dependencies */
+import React, { Component, PureComponent } from "react"
+import PropTypes from "prop-types"
 
 function testFunction(
   firstLongArgument,
@@ -10,23 +10,29 @@ function testFunction(
   return PropTypes.instanceOf(isThatThirdArgument)
 }
 
-const Button = ({ children, onClick, demo }) => (
-  <div role="button" onClick={onClick} focusable>
-    {children}
-    x
-    {demo}
+const Button = ({ children, onClick, demo, onKey }) => (
+  <div
+    role="button"
+    tabIndex={0}
+    onKeyPress={onKey}
+    onClick={onClick}
+    focusable
+  >
+    {children}x{demo}
   </div>
 )
 
 Button.propTypes = {
   children: PropTypes.node,
   onClick: PropTypes.func,
-  demo: testFunction(undefined, 'last', Number),
+  onKey: PropTypes.func,
+  demo: testFunction(undefined, "last", Number),
 }
 
 Button.defaultProps = {
   children: null,
   onClick: null,
+  onKey: null,
   demo: Number(1),
 }
 
@@ -77,9 +83,7 @@ class Example extends PureComponent {
   }
 
   render() {
-    return (
-      <Button onClick={this.resolveUpdate}>Update</Button>
-    )
+    return <Button onClick={this.resolveUpdate}>Update</Button>
   }
 }
 
