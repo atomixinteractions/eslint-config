@@ -1,13 +1,13 @@
 {
   "name": "@atomix/eslint-config",
-  "version": "7.0.0-alpha.3",
-  "description": "Config for ESLint used in Atomix",
-  "main": ".eslintrc",
-  "scripts": {
-    "test": "eslint example"
-  },
+  "version": "7.0.0-next.1",
+  "description": "Config for ESLint used in Atomix's projects",
+  "main": ".eslintrc.js",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -28,21 +28,25 @@
   "maintainers": [
     "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)"
   ],
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/atomixinteractions/eslint-config/issues"
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
-  "devDependencies": {
-    "eslint": "^5.9.0"
-  },
-  "peerDependencies": {
-    "eslint": "5.*.*"
-  },
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-unicorn": "^6.0.1"
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-unicorn": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.*",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-unicorn": "^7.1.0"
   }
 }

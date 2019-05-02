@@ -1,13 +1,13 @@
 {
   "name": "@atomix/eslint-config-react",
-  "version": "7.0.0-alpha.3",
-  "description": "ESLint config for React used in Atomix",
-  "main": ".eslintrc",
-  "scripts": {
-    "test": "eslint example"
-  },
+  "version": "7.0.0-next.1",
+  "description": "Config for ESLint used in Atomix's projects on React",
+  "main": ".eslintrc.js",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -30,24 +30,27 @@
   "maintainers": [
     "Sergey Sova <mail@sergeysova.com> (https://sergeysova.com)"
   ],
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/atomixinteractions/eslint-config/issues"
   },
   "homepage": "https://github.com/atomixinteractions/eslint-config",
-  "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-plugin-unicorn": "^6.0.1"
-  },
-  "peerDependencies": {
-    "eslint": "5.5.*"
-  },
   "dependencies": {
-    "@atomix/eslint-config": "^7.0.0-alpha.3",
+    "@atomix/eslint-config": "^7.0.0-next.1",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.*",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
   }
 }
