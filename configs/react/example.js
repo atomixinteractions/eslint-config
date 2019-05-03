@@ -3,14 +3,14 @@ import React, { Component, PureComponent } from "react"
 import PropTypes from "prop-types"
 
 function testFunction(
-  firstLongArgument,
-  exactlySecondLongArgument,
+  _firstLongArgument,
+  _exactlySecondLongArgument,
   isThatThirdArgument,
 ) {
   return PropTypes.instanceOf(isThatThirdArgument)
 }
 
-const Button = ({ children, onClick, demo, onKey }) => (
+export const Button = ({ children, onClick, demo, onKey }) => (
   <div
     role="button"
     tabIndex={0}
@@ -36,7 +36,7 @@ Button.defaultProps = {
   demo: Number(1),
 }
 
-class Page extends Component {
+export class Page extends Component {
   state = { count: 0 }
 
   increment = () => {
@@ -44,11 +44,11 @@ class Page extends Component {
   }
 
   render() {
-    const { count } = this.state
+    const { count, foo: _foo, ...rest } = this.state
 
     return (
       <div>
-        <Button onClick={this.increment}>
+        <Button {...rest} onClick={this.increment}>
           Increment:
           {count}
           <div>
@@ -65,7 +65,7 @@ class Page extends Component {
 }
 
 // eslint-disable-next-line react/no-multi-comp
-class Example extends PureComponent {
+export class Example extends PureComponent {
   static propTypes = {
     onUpdate: PropTypes.func,
   }
@@ -85,10 +85,4 @@ class Example extends PureComponent {
   render() {
     return <Button onClick={this.resolveUpdate}>Update</Button>
   }
-}
-
-module.exports = {
-  Button,
-  Page,
-  Example,
 }

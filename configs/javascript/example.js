@@ -15,10 +15,12 @@ const example = {
 const CONSTANT_NAME = 123
 const valueName = 1 + CONSTANT_NAME
 
-const getAsync = (data) =>
+const getAsync = (_unused, data) =>
   new Promise((res) => setTimeout(res, 1 * valueName, data))
 
 async function testAsync(list) {
+  const [_first, _second, third] = list
+  format(third)
   for (const item of list) {
     await getAsync(item)
   }
@@ -50,7 +52,7 @@ try {
   } else {
     global.meet = false
   }
-} catch (foo) {
+} catch (_foo) {
   try {
     inside()
   } catch (bar) {
@@ -63,7 +65,7 @@ try {
 
   example.first += demo
   example.second = --example.first
-} catch (error) {
+} catch (_error) {
   example.second = 0
 }
 

@@ -19,7 +19,17 @@ module.exports = {
     "vars-on-top": "off",
     quotes: "off",
     "no-confusing-arrow": "off",
-    "no-unused-vars": ["warn", { ignoreRestSiblings: false }],
+    "no-unused-vars": [
+      "warn",
+      {
+        args: "all",
+        argsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+        ignoreRestSiblings: false,
+        caughtErrors: "all",
+        varsIgnorePattern: "^_",
+      },
+    ],
     "arrow-parens": ["warn", "always"],
     "no-plusplus": "off",
     "lines-between-class-members": [
@@ -44,7 +54,7 @@ module.exports = {
       {
         functions: false,
         classes: true,
-        variables: true,
+        variables: false,
       },
     ],
 
@@ -68,7 +78,10 @@ module.exports = {
     "import/no-named-as-default": "off",
     "import/newline-after-import": ["error", { count: 1 }],
 
-    "unicorn/catch-error-name": ["error", { name: "error" }],
+    "unicorn/catch-error-name": [
+      "error",
+      { name: "error", caughtErrorsIgnorePattern: "^_" },
+    ],
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/import-index": "off",
   },
