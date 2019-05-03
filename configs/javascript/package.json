@@ -1,6 +1,6 @@
 {
   "name": "@atomix/eslint-config",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "Config for ESLint used in Atomix's projects",
   "main": ".eslintrc.js",
   "publishConfig": {
