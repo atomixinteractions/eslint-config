@@ -40,7 +40,7 @@ export class Page extends Component {
   state = { count: 0 }
 
   increment = () => {
-    this.setState((prevState) => prevState.count + 1)
+    this.setState((previousState) => previousState.count + 1)
   }
 
   render() {
